@@ -1,0 +1,139 @@
+body {
+    padding: 0; 
+    margin: 0;
+    min-width: 375px;
+}
+.nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    z-index: 1;
+    margin-top: 40px;
+    border-top: solid 5px orangered;
+    border-bottom: solid 5px orangered;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color: orange;
+}
+
+.nav-right {
+    margin-right: 130px;
+    margin-left: auto;
+    flex-wrap: wrap; 
+}
+
+.nav-right li {
+    display: inline-block;
+}
+
+.nav-left {
+    margin-left: 130px; 
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+li {
+    padding: 0 15px;
+}
+
+.nav-left li {
+    display: inline-block;
+}
+
+.flex-container img {
+    margin: 0; 
+    height: 130px; 
+    width: 130px;
+}
+
+.nav-right a,
+ .nav-left a {
+     text-decoration: none;
+    color: orangered;
+    font-family: 'Montserrat', sans-serif
+}
+
+.hamburger { 
+    position: relative;
+    background-color: black;
+    border: 0;
+    display: none;  
+    color: white;
+    cursor: pointer; 
+    font-size: 20px;
+    z-index: 999;
+    margin-left: 20px; 
+}
+
+.hamburger:focus {
+    outline: none; 
+}
+ /*main*/ 
+.grid-container img {
+    object-fit: cover;
+    max-width: 100%; 
+    height: auto; 
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    grid-gap: 2em;
+    margin: 30px auto;
+    max-width: 1500px; 
+}
+
+.private-event {
+    grid-column: span 2;
+}
+
+.ovs {
+
+    grid-column: span 2; 
+}
+
+
+@media screen and (max-width: 1327px) {
+    ul {
+        display: none;
+       
+    }
+
+    li {
+        display: block;
+        width: 100%;
+        
+    }
+    
+    .hamburger {
+        display: block;
+    }
+
+    .flex-container img {
+        position: absolute;
+        min-width: 100px;
+        min-height: auto;  
+    }
+
+    .grid-container img {
+        min-width: 375px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .seltzer,
+    .airport {
+        grid-column: span 2;
+    }
+}
+
+
