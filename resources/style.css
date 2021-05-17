@@ -16,6 +16,42 @@ body {
     border-bottom: solid 5px orangered;
 }
 
+.slidemenu {
+    position: fixed; 
+    top: 0px; 
+    left: 0px; 
+    height: 100%; 
+    width: 0px; /*300px*/
+    background-color: black;
+    z-index: 1;
+    padding-top: 100px; 
+    overflow-x: hidden;
+    opacity: .90; 
+}
+
+.slidemenu a {
+    margin-left: 50px;
+    padding: 10px;  
+    text-decoration: none;
+    color: orangered;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px; 
+    display: block;
+    
+}
+
+.slidemenu a:hover {
+    color: white; 
+}
+
+.slidemenu .closebtn {
+    position: absolute;
+    top: 0px; 
+    right: 25px;
+    font-size: 36px; 
+    margin-left: 32px; 
+}
+
 .flex-container{
     display: flex;
     justify-content: space-around;
@@ -56,7 +92,7 @@ li {
 
 .nav-right a,
  .nav-left a {
-     text-decoration: none;
+    text-decoration: none;
     color: orangered;
     font-family: 'Montserrat', sans-serif
 }
@@ -111,6 +147,10 @@ li {
         display: block;
         width: 100%;
         
+    }
+
+    .slidemenu.open {
+        width: 300px; 
     }
     
     .hamburger {
