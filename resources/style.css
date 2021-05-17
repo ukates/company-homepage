@@ -27,6 +27,7 @@ body {
     padding-top: 100px; 
     overflow-x: hidden;
     opacity: .90; 
+    transition: all .5s ease-in-out; 
 }
 
 .slidemenu a {
@@ -37,6 +38,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px; 
     display: block;
+    transition: all .6s ease-out; 
     
 }
 
