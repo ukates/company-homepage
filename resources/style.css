@@ -3,6 +3,11 @@ body {
     margin: 0;
     min-width: 375px;
 }
+
+li {
+    padding: 0 15px;
+}
+
 .nav {
     background-color: black;
     display: flex;
@@ -16,6 +21,20 @@ body {
     border-bottom: solid 5px orangered;
 }
 
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color: orange;
+}
+
+.flex-container img {
+    margin: 0; 
+    height: 130px; 
+    width: 130px;
+}
+
 .slidemenu {
     position: fixed; 
     top: 0px; 
@@ -27,7 +46,7 @@ body {
     padding-top: 100px; 
     overflow-x: hidden;
     opacity: .90; 
-    transition: all .5s ease-in-out; 
+    transition: all .5s ; 
 }
 
 .slidemenu a {
@@ -38,7 +57,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px; 
     display: block;
-    transition: all .6s ease-out; 
+    transition: all .6s; 
     
 }
 
@@ -51,15 +70,7 @@ body {
     top: 0px; 
     right: 25px;
     font-size: 36px; 
-    margin-left: 32px; 
-}
-
-.flex-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    color: orange;
+    margin-left: 32px;  
 }
 
 .nav-right {
@@ -78,18 +89,8 @@ body {
     flex-wrap: wrap;
 }
 
-li {
-    padding: 0 15px;
-}
-
 .nav-left li {
     display: inline-block;
-}
-
-.flex-container img {
-    margin: 0; 
-    height: 130px; 
-    width: 130px;
 }
 
 .nav-right a,
